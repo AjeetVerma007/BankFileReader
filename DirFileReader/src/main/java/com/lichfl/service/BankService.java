@@ -9,5 +9,7 @@ public interface BankService {
 	public List<BankFile>  getBankFiles();
 
 	public void saveFile(BankFile bankFile);
+	 public String sendMail();
+
 
 }

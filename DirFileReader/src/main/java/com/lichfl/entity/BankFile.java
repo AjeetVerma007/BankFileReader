@@ -32,5 +32,11 @@ public class BankFile {
 
 	@Column(name = "created_date")
 	private String createdDate;
+	
+	@Column(name="status")
+	private Character status;
+	
+	@Column(name="sent_msg")
+	private Character sentMsg;
 
 }

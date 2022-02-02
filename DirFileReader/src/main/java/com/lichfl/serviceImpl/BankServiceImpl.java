@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.lichfl.dao.BankFileRepository;
+import com.lichfl.dao.SendMailRepo;
 import com.lichfl.entity.BankFile;
 import com.lichfl.service.BankService;
 
@@ -15,6 +16,10 @@ public class BankServiceImpl implements BankService{
 	
 	@Autowired
 	BankFileRepository bankFileRepository;
+	
+	@Autowired
+	SendMailRepo sendMailRepo;
+	
 
 	@Override
 	public List<BankFile> getBankFiles() {
@@ -29,6 +34,13 @@ public class BankServiceImpl implements BankService{
 		// TODO Auto-generated method stub
 		bankFileRepository.save(bankFile);
 		
+	}
+
+	@Override
+	public String sendMail() {
+		// TODO Auto-generated method stub
+		  String outMsg = sendMailRepo.SendMail();
+		  return outMsg;
 	}
 
 }

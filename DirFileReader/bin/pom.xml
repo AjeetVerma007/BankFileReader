@@ -14,7 +14,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>DirFileReader</name>
 	<description>File reader from Directory</description>
-	<!--<packaging>war</packaging>  -->
+	<packaging>war</packaging>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

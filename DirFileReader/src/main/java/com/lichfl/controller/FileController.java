@@ -26,6 +26,8 @@ public class FileController {
 	@GetMapping({ "/list" })
 	public String getAllFiles(
 			@RequestParam(value = "clientCode", defaultValue = "Axis", required = true) String clientCode, Model m) {
+		
+	System.out.println("reached controller : /list");
 
 		
 		 List<BankFile> bankFileList = bankService.getBankFiles();
