@@ -56,7 +56,9 @@ public class DirFileReaderApplication extends SpringBootServletInitializer {
 
 			Date date = new Date();
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-			String pathToScan = "D:\\BankFiles";
+			
+			String pathToScan ="D:\\auditor\\datamatics\\Out";
+			//String pathToScan = "D:\\BankFiles";
 			String matchPattern = "919020003182009";
 			String matchPattern2 = "LICHF447";
 			List<String> dbFiles = new ArrayList<String>();
@@ -120,6 +122,9 @@ public class DirFileReaderApplication extends SpringBootServletInitializer {
 				logger.info("Controller outMsg : " + outMsg);
 
 			}
+			
+			//public void parseFile(String Filename,)
+			
 		}
 	}
 

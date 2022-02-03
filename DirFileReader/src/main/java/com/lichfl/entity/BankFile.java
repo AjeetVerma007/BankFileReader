@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "axis_dep_files")
+@Table(name = "axis_dep_files" ,schema="ulslive")
 public class BankFile {
 
 	@Id
@@ -38,5 +38,8 @@ public class BankFile {
 	
 	@Column(name="sent_msg")
 	private Character sentMsg;
-
+	
+	/*
+	 * @Column(name="mail_sent_bank") private Character mailSentBank;
+	 */
 }

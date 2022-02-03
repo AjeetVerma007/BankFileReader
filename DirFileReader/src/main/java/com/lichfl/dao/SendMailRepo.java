@@ -21,7 +21,7 @@ public class SendMailRepo {
 
 	public String SendMail() {
 		try {
-			query = this.entityManager.createStoredProcedureQuery("pr_sftp_mail_send");
+			query = this.entityManager.createStoredProcedureQuery("PKG_BANK_MAILER.pr_sftp_mail_send");
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
